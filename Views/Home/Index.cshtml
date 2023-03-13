@@ -1,0 +1,125 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruleta rusa</title>
+    @* STYLES *@
+    <link rel="stylesheet" href="~/Content/Ruleta/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="app">
+        @* LOGIN Y REGISTRO *@
+        <div v-if="usuario.Nombre == ''">
+            <div v-if="ViewRegister">
+                <Registro></Registro>
+            </div>
+            <div v-else>
+                <Login></Login>
+            </div>
+        </div>
+        @* ----------------------------- *@
+        <div v-else>
+            <div class="w-50 m-auto mt-2">
+                <table class="table table-secondary table-bordered border-dark">
+                    <tr>
+                        <th scope="col">NOMBRE: {{usuario.Nombre}}</th>
+                        <th scope="col">MONTO : {{usuario.Monto}} </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" id="container">
+                <div style="margin-top: 50px;">
+                    <chart></chart>
+                </div>
+                <button id="spin-btn" v-on:click="girar" ref="spinBtn">GIRAR</button>
+                <img src="~/Content/spinner-arrow-.svg" alt="spinner-arrow" style="transform: rotate(-90deg); left: 42.5%; top: -12%; " />
+            </div>
+            <div class="w-50 m-auto">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">VALORES DE APUESTA</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-1">
+                            <label>Tipo de apuesta:</label>
+                            <select  v-model="TipoApuesta" v-on:change="onChangeDisabled" class="form-control disabled">
+                                <option value="1">Color</option>
+                                <option value="2">Color y pares o impares</option>
+                                <option value="3">Color y numero</option>
+                            </select>
+                        </div>
+                        <hr />
+                        <div class="col-12 row m-0 p-0">
+                            <div class="mt-2 col-md-6 p-0">
+                                <label>Color: </label>
+                                <select v-model="Apuesta.Color" class="form-control">
+                                    <option selected>Rojo</option>
+                                    <option>Negro</option>
+                                </select>
+                            </div>
+                            <div class="mt-2 col-md-6 p-0 ps-2">
+                                <label>Tipo de numero: </label>
+                                <select v-model="Apuesta.TipoNumero" :disabled="TipoNumeroDisabled" class="form-control disabled">
+                                    <option value="">Ninguno</option>
+                                    <option>Par</option>
+                                    <option>Inpar</option>
+                                </select>
+                            </div>
+                            <div class="mt-2 col-md-6 p-0">
+                                <label>Numero: </label>
+                                <input v-model="Apuesta.Numero" min="0" max="36" :disabled="NumeroDisabled" type="number" class="form-control" />
+                            </div>
+                            <div class="mt-2 col-md-6 p-0 ps-2">
+                                <label>Monto: </label>
+                                <input v-model="Apuesta.Monto" type="number" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" v-on:click="onApuesta">Iniciar Apuesta</button>
+                        <button class="btn btn-secondary me-2 ms-2">Guardar Partida</button>
+                        <button type="button" class="btn btn-primary">
+                            Registrate
+                        </button>
+                    </div>
+                </div>
+                <table class="table table-secondary table-striped table-bordered">
+                    <thead>
+                        <tr class="table-dark">
+                            <th colspan="3" class="text-center">
+                                RESULTADOS
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">NUMERO</th>
+                            <th scope="col">COLOR</th>
+                            <th scope="col">ES PAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{Elemento.label}}</td>
+                            <td>{{Elemento.nameColor}}</td>
+                            <td>{{Elemento.tipo}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @* SCRIPTS *@
+    @* VUEJS | CHARTJS | datalabels | LOCAL SCRIPT  *@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0/chart.min.js" integrity="sha512-lkEx3HSoujDP3+V+i46oZpNx3eK67QPiWiCwoeQgR1I+4kutWAuOSs3BxEUZt4U/mUfyY5uDHlypuQ1HHKVykA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-chartjs/3.5.1/vue-chartjs.min.js" integrity="sha512-HIA1ey+BHvsI1zt1i4IC52HvVClIQ6pOUbuZ/YN0ko2DPgkJp50ADnA7XXiKU0k1TyLUrW4VCdB/n82Et9NGxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/Content/Ruleta/Ruleta.js"></script>
+    <script src="~/Content/Ruleta/Login.js"></script>
+    <script src="~/Content/Ruleta/Registro.js"></script>
+    <script src="~/Content/Ruleta/Index.js"></script>
+
+</body>
+</html>

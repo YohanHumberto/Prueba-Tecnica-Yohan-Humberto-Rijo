@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Chart.js</title>
+    <style>
+    body{       
+        background-color: #212733;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: auto;
+        text-align: center !important;
+    }    
+    </style>
+</head>
+<body>
+        
+    <div id="app">
+        <h2>{{ message }}</h2>
+    <chart></chart>
+    </div>
+<!-- Vue js -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+<!-- Chart par Vue -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<!-- <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-chartjs/5.2.0/index.min.js" integrity="sha512-ufTf42mhUfeWuthxxep+KAw4nR56kE+MagUAstlG7Mwcpck7ZkTMHv8KRGcYvQ0AjwskYlTVgP8CfRCD/RW68Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-chartjs/2.7.1/vue-chartjs.min.js" integrity="sha512-7qDIYrK9KrhT8W0O/v3ifc162r8iqLzo6DAg2l0QeZpdPBPFt0rbVXpwKDtutZCQwWhm6CB3zciReKZNDhiFtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-chartjs/3.5.1/vue-chartjs.min.js" integrity="sha512-HIA1ey+BHvsI1zt1i4IC52HvVClIQ6pOUbuZ/YN0ko2DPgkJp50ADnA7XXiKU0k1TyLUrW4VCdB/n82Et9NGxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Axios -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+<script>
+let url = 'http://localhost/apirest/articulos' // API PHP
+//let url = 'http://localhost:3000/api/articulos/' // API Node Js
+
+Vue.component('chart', {
+  extends: VueChartJs.Pie,
+  data(){
+    return{
+      etiquetas: ["uno","dos","tres"],
+      stock: [1,2,3],
+      bgColors: ['#ea80fc','#e040fb', '#d500f9', '#aa00ff', '#f8bbd0', '#f06292', '#ec407a', '#d81b60', '#1de9b6', '#00bfa5', '#e65100']
+    }
+  },
+  mounted () {
+    this.renderChart({
+        labels: this.etiquetas,
+        datasets: [
+            {
+                label: 'Data One',
+                backgroundColor: this.bgColors,              
+                data: this.stock,                
+            }
+        ]
+    }, {responsive: true, maintainAspectRatio: false})
+  },
+  methods:{
+  }  
+})
+var vm = new Vue({
+  el: '#app',
+  data: {
+    message: 'Vue - Chart.js'
+  }
+})
+
+</script>
+</body>
+</html>

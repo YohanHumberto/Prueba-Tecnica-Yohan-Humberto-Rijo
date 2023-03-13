@@ -1,0 +1,124 @@
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Prueba.dll.config
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Prueba.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Prueba.pdb
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\csc.exe
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\csc.exe.config
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\csc.rsp
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\csi.exe
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\csi.rsp
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.AppContext.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\vbc.exe
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\vbc.exe.config
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\vbc.rsp
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\VBCSCompiler.exe
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Antlr3.Runtime.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Newtonsoft.Json.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Net.Http.Formatting.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Helpers.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Http.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Http.WebHost.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Mvc.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Optimization.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Razor.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.Razor.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\WebGrease.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Newtonsoft.Json.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Net.Http.Formatting.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Helpers.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Http.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Http.WebHost.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Mvc.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Optimization.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.Razor.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\System.Web.WebPages.Razor.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Antlr3.Runtime.pdb
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\obj\Debug\Prueba.csproj.AssemblyReference.cache
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\obj\Debug\Prueba.csproj.CopyComplete
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\obj\Debug\Prueba.dll
+C:\Users\yhumb\OneDrive\Escritorio\tran\TAREA itla\Cuatrismestre VIII\Electiva 1\Prueba\obj\Debug\Prueba.pdb
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Prueba.dll.config
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Prueba.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Prueba.pdb
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\csc.exe
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\csc.exe.config
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\csc.rsp
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\csi.exe
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\csi.rsp
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.AppContext.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\vbc.exe
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\vbc.exe.config
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\vbc.rsp
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\VBCSCompiler.exe
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Antlr3.Runtime.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Newtonsoft.Json.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Net.Http.Formatting.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Helpers.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Http.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Http.WebHost.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Mvc.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Optimization.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Razor.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.Razor.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\WebGrease.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Newtonsoft.Json.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Net.Http.Formatting.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Helpers.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Http.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Http.WebHost.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Mvc.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Optimization.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.Razor.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\System.Web.WebPages.Razor.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Antlr3.Runtime.pdb
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\obj\Debug\Prueba.csproj.AssemblyReference.cache
+C:\Users\yohan\Downloads\prueba-master\prueba-master\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
+C:\Users\yohan\Downloads\prueba-master\prueba-master\obj\Debug\Prueba.csproj.CopyComplete
+C:\Users\yohan\Downloads\prueba-master\prueba-master\obj\Debug\Prueba.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\obj\Debug\Prueba.pdb
