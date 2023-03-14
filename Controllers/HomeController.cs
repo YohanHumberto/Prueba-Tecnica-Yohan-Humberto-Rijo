@@ -10,6 +10,7 @@ namespace Prueba.Controllers
     {
         public ActionResult Index()
         {
+            Session[""] = "";
             return View();
         } 
     }

@@ -20,7 +20,7 @@
                     <button type="button" v-on:click="ChangeView" class="btn btn-secondary">
                         Ya tengo usuario
                     </button>
-                    <button type="button" v-on:click="Guardar" class="btn btn-primary">Guardar</button>
+                    <button type="button" v-on:click="Guardar" class="btn btn-primary">Entrar</button>
                 </div>
             </div>
         </div>
@@ -36,7 +36,15 @@
             this.$parent._data.ViewRegister = !this.$parent._data.ViewRegister;
         },
         Guardar() {
-            this.$parent._data.usuario = { Nombre: this.Nombre, Monto: this.Monto };
+            fetch(window.location.origin + `/api/Api/GetUser?userName=${this.Nombre}`).then(response => response.json())
+                .then(({ Data }) => {
+                    console.log(Data);
+                    if (Data.user) {
+                        alert("Este nombre de usurario ya esta en uso!");
+                    } else {
+                        this.$parent._data.usuario = { Nombre: this.Nombre, Monto: this.Monto };
+                    }
+                });
         }
     }
 });

@@ -2,11 +2,13 @@
 using Prueba.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Mime;
+using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 
@@ -15,7 +17,7 @@ namespace Prueba.Controllers
     //[System.Web.Http.Route("[controller]")]
     public class ApiController : System.Web.Http.ApiController
     {
-        pruebaEntities pruebaEntities = new pruebaEntities();
+        pruebaEntities db = new pruebaEntities();
         private Dictionary<int, string> Elements = new Dictionary<int, string>()
         {
                 { 0, "Verde" },
@@ -72,6 +74,25 @@ namespace Prueba.Controllers
         }
 
         /// <summary>
+        /// Retunr user by name
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        public ActionResult GetUser(string userName)
+        {
+            try
+            {
+                var users = db.User.ToList();
+                var user = users.Where(a => a.Name == userName).FirstOrDefault();
+                return new JsonResult() { Data = new { state = true, user }, JsonRequestBehavior = JsonRequestBehavior.AllowGet, ContentType = "application/json;charset=utf-8" };
+            }
+            catch (Exception exec)
+            {
+                return new JsonResult() { Data = new { state = false, errorMessage = exec.Message }, JsonRequestBehavior = JsonRequestBehavior.AllowGet, ContentType = "application/json;charset=utf-8" };
+            }
+        }
+
+        /// <summary>
         /// Add new user
         /// </summary>
         /// <param name="user"></param>
@@ -81,17 +102,22 @@ namespace Prueba.Controllers
         {
             try
             {
-                if (pruebaEntities.User.Where(a => a.Name == user.Name).ToList().Count() > 0)
+                if (db.User.Where(a => a.Name == user.Name).ToList().Count() > 0)
                 {
-                    return new JsonResult() { Data = new { state = false, errorMessage = "Ya existe un usuario con este nombre" }, JsonRequestBehavior = JsonRequestBehavior.AllowGet, ContentType = "application/json;charset=utf-8" };
+                    var userSaved = db.User.ToList().Where(a => a.Name == user.Name).FirstOrDefault();
+                    userSaved.Monto = user.Monto;
+                    db.Entry(userSaved).State = EntityState.Modified;
+                    db.SaveChanges();
                 }
-
-                pruebaEntities.User.Add(new Prueba.User()
+                else
                 {
-                    Name = user.Name,
-                    Monto = user.Monto,
-                });
-                pruebaEntities.SaveChanges();
+                    db.User.Add(new Prueba.User()
+                    {
+                        Name = user.Name,
+                        Monto = user.Monto,
+                    });
+                    db.SaveChanges();
+                }
                 return new JsonResult() { Data = new { state = true, value = "value" }, JsonRequestBehavior = JsonRequestBehavior.AllowGet, ContentType = "application/json;charset=utf-8" };
             }
             catch (Exception exec)
@@ -111,13 +137,13 @@ namespace Prueba.Controllers
         /// <param name="RandomNumber"></param>
         /// <returns></returns>
         [System.Web.Http.HttpGet]
-        public ActionResult GetMontoApuesta(int TipoApuesta, int Monto, string Color, string Tipo, int Numero, int RandomNumber)
+        public ActionResult GetMontoApuesta(string userName, int TipoApuesta, int Monto, string Color, string TipoNumber, int? Numero, int RandomNumber)
         {
             try
             {
                 JsonResult jsonResult = new JsonResult() { Data = new { }, JsonRequestBehavior = JsonRequestBehavior.AllowGet, ContentType = "application/json;charset=utf-8" };
                 var ele = Elements.ToList().Find(a => a.Key == RandomNumber);
-                double Resultado = 0.00;
+                double Resultado = 0;
 
                 if (Monto <= 0 && Color == "")
                 {
@@ -131,7 +157,7 @@ namespace Prueba.Controllers
                         if (Color == ele.Value) Resultado = Monto / 2;
                         break;
                     case 2:
-                        if (Tipo != "PAR" && Tipo != "INPAR")
+                        if (TipoNumber.ToUpper() != "PAR" && TipoNumber.ToUpper() != "INPAR")
                         {
                             jsonResult.Data = new { state = false, errorMessage = "" };
                             return jsonResult;
@@ -139,8 +165,8 @@ namespace Prueba.Controllers
 
                         if (Color == ele.Value)
                         {
-                            if (Tipo == "PAR" && ele.Key % 2 == 0) Resultado = Monto;
-                            if (Tipo == "INPAR" && ele.Key % 2 != 0) Resultado = Monto;
+                            if (TipoNumber.ToUpper() == "PAR" && ele.Key % 2 == 0) Resultado = Monto;
+                            if (TipoNumber.ToUpper() == "INPAR" && ele.Key % 2 != 0) Resultado = Monto;
                         }
                         break;
                     case 3:

@@ -188,3 +188,7 @@ C:\Users\yhumb\source\repos\Prueba\bin\EntityFramework.dll
 C:\Users\yhumb\source\repos\Prueba\bin\EntityFramework.SqlServer.dll
 C:\Users\yhumb\source\repos\Prueba\bin\EntityFramework.xml
 C:\Users\yhumb\source\repos\Prueba\bin\EntityFramework.SqlServer.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\EntityFramework.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\EntityFramework.SqlServer.dll
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\EntityFramework.xml
+C:\Users\yohan\Downloads\prueba-master\prueba-master\bin\EntityFramework.SqlServer.xml
