@@ -19,7 +19,8 @@ new Vue({
     },
     methods: {
         async girar() {
-            const { Number, Color } = await fetch(window.location.origin + "/api/Api/GetRandomNumberAndColor").then(response => response.json()).then(({ Data }) => Data);
+            let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+            const { Number, Color } = await fetch(URI + "/api/Api/GetRandomNumberAndColor").then(response => response.json()).then(({ Data }) => Data);
             console.log({ Number, Color });
 
             this.$refs.spinBtn.disabled = true;
@@ -51,8 +52,8 @@ new Vue({
             setTimeout(() => {
 
                 const { TipoNumero, Color, Numero, Monto } = this.Apuesta;
-
-                fetch(window.location.origin + `/api/Api/GetMontoApuesta?userName=${this.usuario.Nombre}&TipoApuesta=${this.TipoApuesta}&Monto=${Monto}&Color=${Color}&TipoNumber=${TipoNumero}&Numero=${Numero}&RandomNumber=${this.Elemento.label}`).then(response => response.json())
+                let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+                fetch(URI + `/api/Api/GetMontoApuesta?userName=${this.usuario.Nombre}&TipoApuesta=${this.TipoApuesta}&Monto=${Monto}&Color=${Color}&TipoNumber=${TipoNumero}&Numero=${Numero}&RandomNumber=${this.Elemento.label}`).then(response => response.json())
                     .then(({ Data }) => {
 
                         this.Apuesta.MontoResultante = Data.montoGanado > 0 ? Data.montoGanado : - this.Apuesta.Monto;
@@ -100,7 +101,8 @@ new Vue({
             }
         },
         guardarPartida() {
-            fetch(window.location.origin + "/api/Api/AddUser", {
+            let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+            fetch(URI + "/api/Api/AddUser", {
                 method: "POST",
                 body: JSON.stringify({ Name: this.usuario.Nombre, Monto: this.usuario.Monto }),
                 headers: { 'Content-Type': 'application/json' }
