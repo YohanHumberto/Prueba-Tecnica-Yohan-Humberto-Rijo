@@ -19,9 +19,9 @@ new Vue({
     },
     methods: {
         async girar() {
-            let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+            const ApplicationPath = document.getElementById("ApplicationPath").textContent;
+            let URI = `${window.location.origin}${ApplicationPath.length > 1 ? ApplicationPath : ""}`;
             const { Number, Color } = await fetch(URI + "/api/Api/GetRandomNumberAndColor").then(response => response.json()).then(({ Data }) => Data);
-            console.log({ Number, Color });
 
             this.$refs.spinBtn.disabled = true;
             const referens = this.$children[0].$refs;
@@ -52,7 +52,8 @@ new Vue({
             setTimeout(() => {
 
                 const { TipoNumero, Color, Numero, Monto } = this.Apuesta;
-                let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+                const ApplicationPath = document.getElementById("ApplicationPath").textContent;
+                let URI = `${window.location.origin}${ApplicationPath.length > 1 ? ApplicationPath : ""}`;
                 fetch(URI + `/api/Api/GetMontoApuesta?userName=${this.usuario.Nombre}&TipoApuesta=${this.TipoApuesta}&Monto=${Monto}&Color=${Color}&TipoNumber=${TipoNumero}&Numero=${Numero}&RandomNumber=${this.Elemento.label}`).then(response => response.json())
                     .then(({ Data }) => {
 
@@ -101,7 +102,9 @@ new Vue({
             }
         },
         guardarPartida() {
-            let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : ""}`;
+            const ApplicationPath = document.getElementById("ApplicationPath").textContent;
+            let URI = `${window.location.origin}${ApplicationPath.length > 1 ? ApplicationPath : ""}`;
+
             fetch(URI + "/api/Api/AddUser", {
                 method: "POST",
                 body: JSON.stringify({ Name: this.usuario.Nombre, Monto: this.usuario.Monto }),

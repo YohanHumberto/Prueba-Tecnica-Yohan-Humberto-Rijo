@@ -36,7 +36,8 @@
             this.$parent._data.ViewRegister = !this.$parent._data.ViewRegister;
         },
         Guardar() {
-            let URI = `${window.location.origin}/${window.location.href.split("/").length == 6 ? window.location.href.split("/")[3] : "" }`;
+            const ApplicationPath = document.getElementById("ApplicationPath").textContent;
+            let URI = `${window.location.origin}${ApplicationPath.length > 1 ? ApplicationPath : ""}`;
             fetch(URI + `/api/Api/GetUser?userName=${this.Nombre}`).then(response => response.json())
                 .then(({ Data }) => {
                     console.log(Data);
